@@ -11,9 +11,11 @@
 Flag format: Flags for this competition will follow the format: flag{}, with words joined together with underscores inside the curly braces. If you look closely, you can even find a flag on this page!
 
 
-## My final rank 609 out of 1008.
-This was my first official CTF. While I was disappointed in only solving 2 challenges, I found myself on the cusp of solving several others. Still, my rank put me in the middle third of competitors.
+## My Thoughts & Reflections
+My final rank 609 out of 1008. This was my first official CTF. I had something come up and was forced to miss the first 4 hours of the competition. While I was disappointed in only solving 2 challenges, I did find myself on the cusp of solving several others. Still, my rank put me in the middle third of competitors. I just wish that I had the other 4 hours. I am looking forward to my next competition. 
 
+
+## The Challenges 
 
 ### Rules
 View the rules page source to find the flag. 
@@ -29,13 +31,23 @@ flag{whirlpool_in_a_cinch}
 ```
 
 
+## Baseball
+This was about cracking the base encoding. I had run it thru both `base64 -d` and it din't yield anything useful. I tried to see if I had another base encoding. Ran `which base*` in the terminal and found a base32. I ran the text through `base32 -d` and it still didn't get the flag. 
+
+While I knew that it had to do with the base decoding, I didn't consider running it through them in sequence. I also didn't explore what other base endings might be useful. I also didn't think that I would need to run it through 3 "bases."
+
+The final answer would be obtained using `base64`, `base32`, and finally `base58`. As i wasn't aware of base 58 I would have required more time to try a host of other options. 
+
+
 ### Y2K
 > They told us the world was going to end in the year 2000! But it didn't... when do *YOU* think the world will end?
  
 
 nc challenge.ctf.games 31754
 malc wrote that you input this as the year. 
+```
 open('/home/challenge/flag.txt').read()
+```
 flag{we_are_saved_from_py2_k}
 
 But why does it work, and how would I even get close to guessing this method??
