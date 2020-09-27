@@ -1,4 +1,4 @@
-# BSidesBOS CTF
+# BSidesBOS CTF Sept. 26, 2020
 
 ## Rules & Notes
 
@@ -12,7 +12,7 @@ Flag format: Flags for this competition will follow the format: flag{}, with wor
 
 
 ## My Thoughts & Reflections
-My final rank 609 out of 1008. This was my first official CTF. I had something come up and was forced to miss the first 4 hours of the competition. While I was disappointed in only solving 2 challenges, I did find myself on the cusp of solving several others. Still, my rank put me in the middle third of competitors. I just wish that I had the other 4 hours. I am looking forward to my next competition. 
+My final rank was 609 out of 1008. This was my first official CTF. I had something come up and was forced to miss the first 4 hours of the competition. While I was disappointed in only solving 2 challenges, I did find myself on the cusp of solving several others. Still, my rank put me in the middle third of competitors. I just wish that I had the other 4 hours. I am looking forward to my next competition. 
 
 
 ## The Challenges 
@@ -25,7 +25,7 @@ flag{its_time_to_hack}
 
 
 ### Kiddie Pool
-Presented with a distorted image. It is swirled around a central point. You have to unswirl the image to be able to read te flag. Use GIMP function Whirl and Pinch to undo the distortion. 
+Presented with a distorted image. It is swirled around a central point. You have to unswirl the image to be able to read the flag. The challenge text says that the pubisher thinks the method is 900% cool. I guessed that you would have to reverse the swirl by -900%. That was correct. Use GIMP function Whirl and Pinch to undo the distortion. 
 ```
 flag{whirlpool_in_a_cinch}
 ```
